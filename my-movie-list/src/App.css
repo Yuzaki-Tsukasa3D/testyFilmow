@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  margin: 5px;
+  background: #252525;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #383838;
+  transform: translateY(-1px);
+}
+
+
+
+.reset-button {
+  background: #e50914;
+}
+
+.reset-button:hover {
+  background: #b20710;
+}
+
+
+
+.movie-card {
+  background: #1a1a1a;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 18px;
+  transition: 0.2s;
+}
+
+.movie-card:hover {
+  border-color: #444;
+  transform: translateY(-2px);
+}
+
+
+
+.movie-card.watched {
+  border-left: 4px solid #22c55e;
+}
+
+
+
+.movie-card p:first-child {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+
+
+.movie-card p:nth-child(2) {
+  color: #999;
+  margin: 5px 0;
+}
+
+
+
+.movie-card p:nth-child(3) {
+  display: inline-block;
+  background: #292929;
+  color: #bbb;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+
+
+.movie-card > button {
+  background: #e50914;
+  margin-top: 12px;
+}
+
+.movie-card > button:hover {
+  background: #b20710;
+}
+
+
+.movie-card div {
+  margin-top: 12px;
+}
+
+.movie-card div p {
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+
+
+.movie-card div button {
+  background: transparent;
+  color: #f5c518;
+  font-size: 26px;
+  padding: 2px 4px;
+  margin: 0;
+}
+
+.movie-card div button:hover {
+  background: transparent;
+  color: #ffd84d;
+  transform: scale(1.15);
+}
+
+
+
