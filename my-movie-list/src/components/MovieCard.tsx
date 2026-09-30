@@ -1,7 +1,7 @@
 type MovieCardProps = {
   title: string
   year: number
-  genre: string
+  genre: string[]
   watched: boolean
   onWatched: () => void
   rating: number
@@ -18,13 +18,22 @@ function MovieCard({
   onRate,
 }: MovieCardProps) {
   return (
-   <div className={`movie-card ${watched ? "watched" : ""}`}>
-
-
+    <div className={`movie-card ${watched ? "watched" : ""}`}>
       <p>{title}</p>
       <p>{year}</p>
-      <p>{genre}</p>
-      <br></br>
+
+      <p>
+        Gatunki:{" "}
+        {genre.map((item, index) => (
+          <span key={index}>
+            {item}
+            {index < genre.length - 1 && ", "}
+          </span>
+        ))}
+      </p>
+
+      <br />
+
       <button onClick={onWatched}>
         {watched ? "✓ Obejrzany" : "Oznacz jako obejrzany"}
       </button>
